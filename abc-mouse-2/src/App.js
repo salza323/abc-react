@@ -1,17 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import './App.css';
 
 // import Home from './components/Home';
-import RightNumber from './Components/Challenges/RightNumber';
+import NumberRecognition from './Components/Challenges/NumberRecognition';
 
 function App() {
   return (
     <div className='App'>
       <p>Future ABC MOUSE clone with video conferencing</p>
       <Switch>
-        <Route path='/right-number' component={RightNumber} />
+        <Route path='/right-number' component={NumberRecognition} />
       </Switch>
     </div>
   );

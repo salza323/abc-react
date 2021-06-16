@@ -1,0 +1,27 @@
+.sheet {
+  border: 1px solid black;
+  border-radius: 8px;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  & + sheet {
+    margin-left: 10px;
+  }
+
+  .sheet__label {
+    color: blue;
+  }
+
+  .sheet__result {
+    &.sheet__result--default {
+      background-color: gray;
+    }
+    &.sheet__result--success {
+      background-color: green;
+    }
+
+    &.sheet__result--fail {
+      background-color: red;
+    }
+  }
+}
